@@ -1,3 +1,61 @@
+/* Mengambil font 'Inter' dari Google Fonts agar lebih modern */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* --- Pengaturan Dasar --- */
 body {
-  font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9; /* Warna background abu-abu sangat terang */
+    color: #333;
+}
+
+/* --- Kustomisasi Navbar --- */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut di bawah navbar */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease; /* Animasi halus saat di-hover */
+}
+
+.navbar-brand:hover {
+    color: #0dcaf0 !important; /* Berubah jadi warna cyan saat disentuh mouse */
+}
+
+/* --- Kustomisasi Kontainer Utama (Card Effect) --- */
+.container.mt-5 {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Membuat sudut membulat */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Efek melayang (floating card) */
+    margin-bottom: 50px;
+}
+
+/* --- Tipografi --- */
+h1 {
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Membuat garis bawah estetis dengan gradasi warna di bawah judul */
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+    border-radius: 2px;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.8; /* Memberi jarak antar baris agar lebih mudah dibaca */
+    color: #555;
+    text-align: justify; /* Teks rata kanan-kiri */
 }
